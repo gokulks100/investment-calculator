@@ -10,9 +10,10 @@ export class InvestmentSerivce
 {
   results = signal<annualData[] | undefined>(undefined)
 
+  resultData!:annualData[];
+
   calculateInvestmentResults(data: userData) {
-    const { initialInvestment, expectedReturn, duration, annualInvestment } =
-      data;
+    const { initialInvestment, expectedReturn, duration, annualInvestment } =  data;
     const annualData = [];
     let investmentValue = initialInvestment;
 
