@@ -1,5 +1,4 @@
 import { Component, EventEmitter, output, Output, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { type userData } from '../data.model';
 import { InvestmentSerivce } from '../investment.service';
 
